@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Examen TP</title>
+		
+		
+		<script>
+			//let villeCourante=["Paris","Lyon","Mareseille"];
+			
+			let cities =document.getElementsByClassName("city");
+			
+let villeCourante=document.getElementsByClassName("ville");
+			let l = cities.length;
+			
+			for (let i=0; i<villeCourante.length; i++) {
+				window.setInterval(function(){
+					cities[i].classList.toggle(cities[i].hide())
+		});}
+				//if(villeCourante===cities[i]){}*/	
+				
+					/*showCity(cities[i]).element.style.display="";
+					function showCity().onclick{element.style.display= "true";}*/
+				
+				
+			
+		</script>
+		
+		
+		<style>
+		#titre{
+			background: black;
+			text-align: center;
+			color: aliceblue;
+			border: solid 2px yellow;
+			text-transform: capitalize;
+			}
+		#div1{
+			background: grey;
+			border: solid 2px yellow;
+			margin: 10px 20px;
+			text-transform: capitalize;
+			text-indent:20px;
+			font-size: 15px;
+			width: 300px;
+		}
+		#div2
+			{background: grey;
+			border: solid 2px yellow;
+			margin: 10px 20px;
+			text-transform: capitalize;
+			text-indent:20px;
+			font-size: 15px;
+			width: 300px;
+		}
+		#div3
+			{background: grey;
+			border: solid 2px yellow;
+			margin: 10px 20px;
+			text-transform: capitalize;
+			text-indent:20px;
+			font-size: 15px;
+			width: 300px;
+		}
+		#div4
+			{background: grey;
+			border: solid 2px yellow;
+			margin: 20px 0px;
+			text-transform: capitalize;
+			text-indent:20px;
+			font-size: 20px;
+		}
+		#div1>img
+             {margin:0px 30px;
+        }
+		#div2>img
+             {margin:0px 30px;	
+        }
+		#div3>img
+             {margin:0px 30px;	
+        }
+		.flex1 
+			{display: flex;
+				justify-content: center;
+				flex-wrap:wrap;	
+			}
+		.flex1 div:nth-child(1)
+			{display: flex;
+			flex-wrap: wrap;	
+			flex-grow: 1;
+		}
+		.flex1 div:nth-child(2)
+			{display: flex;	
+			flex-wrap: wrap;
+			flex-grow: 1;
+		}	
+		.flex1 div:nth-child(3)
+			{display: flex;
+			flex-wrap: wrap;
+			flex-grow: 1;
+		}	
+	</style>
+	</head>	
+	
+<body>
+	
+	<h1 id="titre">TP Météo HTML</h1>
+	<label for="choix-ville">Choisir une ville:</label>
+	<select   id="choix-ville" onload="showCity()">
+	<option value="ville0">Selectionner</option>
+	<option class="ville">Paris</option>
+	<option class="ville">Lyon</option>
+	<option class="ville">Mareseille</option>
+		</select>		
+		
+	<div class="flex1">	
+
+	<div id="div1" class="city">
+		<h2>Paris</h2>
+		<p>-3, Pluvieux</p>
+		<img src="Pluie.png" alt="Pluvieux" width="50px" margin="220px" >
+	</div>
+
+	<div id="div2" class="city">
+		<h2>Lyon</h2>
+		<p>10, Nuageux</p>
+		<img src="Nuageux.png" alt="Nuageux" width="50px">
+	</div>
+
+
+	<div id="div3" class="City">
+		<h2>Marseille</h2>
+		<p>22, Ensoleillé</p>
+		<img src="soleil.png" alt="Pluvieux" width="50px">
+	</div>
+		
+	</div>
+
+	
+	
+	<div id="div4">
+		<footer>
+			<p>Nabil Mokhtari</p>
+			<p>Pour voir la source des images:<a href="https://thenounproject.com/search/collection/?q=weather" target="_blank">Lien vers la source des icons météo</a></p>
+		</footer>
+	</div>
+	
+</body>
+
+</html>
