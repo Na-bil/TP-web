@@ -2,19 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@500&family=Courgette&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@500&family=Lexend+Mega&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="style.css" />
 
     <meta charset="UTF-8" />
-    <title>Examen TP</title>
+    <title>Suivi Meteo</title>
   </head>
   <header>
     <div class="overlay">
@@ -46,12 +44,13 @@
             <th class="nomVille">Paris</th>
 
             <th>
-              <img class="imageMeteo" src="Pluvieux.png" alt="Pluvieux" />
+              <img class="imageMeteo" src="" alt="" />
             </th>
           </tr>
 
           <tr>
-            <td class="etatMeteo" colspan="2">-3, Pluvieux</td>
+            <td id="temp" class="etatMeteo">,</td>
+            <td id="desc" class="etatMeteo"></td>
           </tr>
         </table>
       </div>
@@ -62,12 +61,13 @@
             <th class="nomVille">Marseille</th>
 
             <th>
-              <img class="imageMeteo" src="soleil.png" alt="Ensoleillé" />
+              <img class="imageMeteo" src="" alt="" />
             </th>
           </tr>
 
           <tr>
-            <td class="etatMeteo" colspan="2">22, Ensoleillé</td>
+            <td id="temp" class="etatMeteo">,</td>
+            <td id="desc" class="etatMeteo"></td>
           </tr>
         </table>
       </div>
@@ -78,24 +78,24 @@
             <th class="nomVille">Lyon</th>
 
             <th>
-              <img class="imageMeteo" src="Nuageux.png" alt="Nuageux" />
+              <img class="imageMeteo" src="" alt="" />
             </th>
           </tr>
 
           <tr>
-            <td class="etatMeteo" colspan="2">10, Nuageux</td>
+            <td id="temp" class="etatMeteo">,</td>
+            <td id="desc" class="etatMeteo"></td>
           </tr>
         </table>
       </div>
     </div>
 
     <footer class="footer">
-      <p class="nomBinomes">Nabil MOKHTARI & Adlane AIT AMRANE</p>
+      <p class="nomBinomes">Nabil MOKHTARI & Adlane AIT AMRANE </p>
       <p class="sourceImages">
-        Pour voir la source des images:<a
-          href="https://thenounproject.com/search/collection/?q=weather"
-          target="_blank"
-          >Lien vers la source des icons météo</a
+        Thanks to 
+        <a href="https://openweathermap.org/" target="_blank"
+          >OpenWeatherMap API</a
         >
       </p>
     </footer>

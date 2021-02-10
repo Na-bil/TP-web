@@ -1,26 +1,22 @@
 header {
-	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	background: url('https://481xy61dp22v2uqbx85ez1tw-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/No-Branding-Header-Background-1-300x79.jpg');
 	text-align: center;
 	width: 100%;
-	height: 220px;
+	height: 160px;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 	overflow: hidden;
 	border-radius: 0 0 85% 85% / 30%;
-
 }
 
 header .overlay {
 	width: 100%;
 	height: 100%;
 	padding: 45px;
-	
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;
 	background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
-	
-
 }
 
 h1 {
@@ -28,60 +24,30 @@ h1 {
 	font-size: 50px;
 	margin-bottom: 30px;
 	margin-right: 90px;
-	text-align : center;
-
-}
-
-
-#titre {
-	background: black;
 	text-align: center;
-	color: aliceblue;
-	border: solid 2px yellow;
-	text-transform: capitalize;
 }
-
 
 
 .city {
-	background: grey;
-	/* border: solid 2px yellow; */
+	background: #DCE1E3;
 	margin: 10px 20px;
 	padding-left: 17px;
 	padding-bottom: 7px;
 	text-transform: capitalize;
 	text-indent: 20px;
-
 	width: 300px;
-
 }
 
 .footer {
-	background: rgba(81, 255, 0, 0.781);
-	/* border: solid 2px yellow; */
-	margin: 50px 20px 0 20px;
+	font-family: 'Lexend Mega', sans-serif;
+	font-size: 1em;
+	background: #707070;
+	color: white;
+	margin: 17px 20px 0 20px;
+	padding-left: 5px;
+	padding-bottom : 0;
 	text-transform: capitalize;
-
-
 }
-
-.nomBinomes {
-	font-family: 'Courgette', cursive;
-	font-size: 1.3em;
-
-}
-
-/* #div1>img {
-      	margin: 0px 30px;
-      }
-
-      #div2>img {
-      	margin: 0px 30px;
-      }
-
-      #div3>img {
-      	margin: 0px 30px;
-      } */
 
 .flex1 {
 	display: flex;
@@ -108,38 +74,46 @@ h1 {
 }
 
 .imageMeteo {
-	width: 150px;
-	margin-top: 40px;
-	;
-	margin-left: 40px;
+	width: 210px;
 }
 
 .nomVille {
-	font-size: 2em;
+	font-size: 1.8em;
 	font-family: 'Roboto', sans-serif;
-
+	padding-right: 20px;
 }
 
 .etatMeteo {
 	font-family: 'Hammersmith One', sans-serif;
-	font-size: 1.6em;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 .labelChoixville {
-
 	margin-left: 20px;
 	margin-right: 25px;
 	padding-bottom: 30px;
 	padding-top: 30px;
-
 	font-family: 'Hammersmith One', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
+}
 
+.flex1>#Lyon {
+	display: none;
+}
+
+.flex1>#Paris {
+	display: none;
 }
 
 
-/* drop down menu  */
+.flex1>#Marseille {
+	display: none;
+}
+
+
+/* Liste déroulante menu  */
 
 .box {
 
@@ -170,17 +144,4 @@ h1 {
 
 .box select option {
 	padding: 30px;
-}
-
-.flex1>#Lyon {
-	display: none;
-}
-
-.flex1>#Paris {
-	display: none;
-}
-
-
-.flex1>#Marseille {
-	display: none;
 }
